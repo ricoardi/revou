@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMP Negeri 2 Gelumbang</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">  
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="container">
+    <nav>
+        <div class="logo-icon"></div>
+
+        <section style="float:right;">
+            <!-- <a class="nav-item" href="#home">Home</a> -->
+            <a class="nav-item" href="#facilities">Fasilitas</a>
+            <a class="nav-item" href="#message-us">Pesan</a>
+            <a class="nav-item" href="#about">Tentang</a>
+            <a class="nav-item" href="#home" style="background-color: #FEDF3D;border-radius: 10%;">Daftar <i class="fas fa-clipboard"></i></a>
+        </section>
+    </nav>
+
+    <section class="section-container">
+        <section id="home">
+            
+            <!-- <div class="banner-container"> -->
+                <div class="flex-container">
+                    <div class="flex-item-left">
+                        <header>
+                            <h1 style="font-size: 50px;">Indonesia Butuh <br> Anak Muda Yang Hebat</h1>
+                            <h1>Ayo daftarkan diri anda SEGERA !</h1>
+                        </header>
+                        <p>di SMA Negeri 1 Gelumbang dan raihlah prestasi yang tinggi</p>
+                        <br>
+                        <button class="daftar-btn"><h1>KLIK DISINI UNTUK MENDAFTAR</h1></button>
+                        <p style="padding-left: 50px;"><b style="font-size: 40px;">&plusmn; 350</b>   <b>Siswa Aktif</b></p>
+                    </div>
+                    <div class="flex-item-right">
+                        <img src="./assets/sman1glb.jpg" alt="" style="width: 100%; height: auto;border-radius: 50px;">
+                    </div>
+                </div>
+            <!-- </div> -->
+        </section>
+        
+        <section id="facilities" style="background-color:#FEDF3D ;padding-top: 70px;">
+            <div class="flex-container">
+                <div class="flex-item-left-2">
+                    <br>
+                    <header>
+                        <h1 style="text-align: center;font-size: 40px;"><b>FASILITAS</b></h1>
+                    </header>
+                </div>
+                <div class="flex-item-right-2">
+                    <article class="facility-list">
+                        <div>
+                            <img src="./assets/musholah.jpeg" alt="" style="max-width: 200px;border-radius: 100px;">
+                            <h5 style="text-align: center;">Musholah</h5>
+                        </div>
+                        <div>
+                            <img src="./assets/labipa.jpeg" alt="" style="max-width: 200px;border-radius: 100px;">
+                            <h5 style="text-align: center;">Lab IPA</h5>
+                        </div>
+                        <div>
+                            <img src="./assets/labfilm.jpeg" alt="" style="max-width: 200px;border-radius: 100px;">
+                            <h5 style="text-align: center;">Lab Film</h5>
+                        </div>
+                        
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- <hr> -->
+        <section id="message-us">
+            <header style="background-color: #F6F7FC;padding-top: 20px;padding-bottom: 20px;">
+                <h1 style="font-size: 30px; text-align: center;">Kami Menunggu Anda Untuk Menjadi Bagian Dari <br> SMA Negeri 1 Gelumbang</h1>
+            </header>
+            <header>
+                <h1 style="font-size: 30px; text-align: center;">Pesan</h1>    
+            </header>
+            <section class="message-us-section" style="padding: 30px;">
+                <div class="flex-container">
+                    <div class="flex-item-left">
+                        <section>
+                            <form name="message-form" onsubmit="return validateForm()">
+                               
+                                <div class="div-form">
+                                    <label for="" class="label-form">Nama :</label> <br>
+                                    <input class="input-form" placeholder="Nama" type="text" name="full-name" />
+                                </div>
+                                <div class="div-form">
+                                    <label for="" class="label-form">Tanggal Lahir :</label><br>
+                                    <input class="input-form" type="date" name="birth-date" />
+                                </div>  
+                                <div class="div-form">
+                                    <label for="" class="label-form">Jenis Kelamin :</label><br>
+                                    <input type="radio" id="male" name="gender" value="Laki-laki"/>
+                                    <label for="male">Laki-laki</label>
+                                    <input type="radio" id="female" name="gender" value="Perempuan"/>
+                                    <label for="female">Perempuan</label>
+                                </div> 
+                                <div class="div-form">
+                                    <label for="" class="label-form">Pesan :</label><br>
+                                    <textarea  class="input-form" name="messages" placeholder="Pesan"></textarea>
+                                </div> 
+                                <div class="div-form" style="justify-content: center;">
+                                    <input type="submit" value="Submit" style="width: 50%; padding: 20px;" class="daftar-btn"/>
+                                </div>
+                                
+                            </form>
+            
+                        </section>
+                    </div>
+                    <div class="flex-item-right">
+                        <section class="result-container">
+                            <div class="form-result">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th>Current Time</th>
+                                        <td> : </td>
+                                        <td><p id="currenttime"></p></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Nama</th>
+                                        <td> : </td>
+                                        <td><span id="sender-full-name"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tanggal Lahir</th>
+                                        <td> : </td>
+                                        <td><span id="sender-birth-date"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Jenis Kelamin</th>
+                                        <td> : </td>
+                                        <td><span id="sender-gender"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Pesan</th>
+                                        <td> : </td>
+                                        <td><span id="sender-messages"></span></td>
+                                    </tr>
+                                </table>
+                                <br>
+                            </div>
+                        </section>
+                    </div>
+                </div>  
+            </section>
+        </section>
+        <section id="about" style="background-color: #F6F7FC;padding: 70px;">
+            <header>
+                <h1 style="font-size: 30px; text-align: center;">Tentang</h1>
+            </header>
+            <div class="flex-container">
+                <div class="flex-item-left" style="justify-content: center;">
+                    <img src="./assets/logox.png" alt="" style="width: 80%; height: auto;">
+                </div>  
+                <div class="flex-item-right" style="padding-left:30px;padding-right:30px;background-color: white;border-radius: 30px;">
+                    <article style="text-align: justify;">
+                        <h1>&emsp;&ensp;UI tugas ini terinspirasi dari tampilan website RevoU dan merupakan tugas akhir dari rangkaian pelatihan RevoU selama 2 minggu</h1>
+                        <h1>&emsp;&ensp;Saya mohon maaf sudah "mencontek" UI dari RevoU karena menurut saya UI Website RevoU bagus dan sangat mencerminkan anak muda</h1>
+                        <h4>&emsp;&ensp;Untuk rekan-rekan yang telah mengikuti pelatihan ini, semoga sukses dan ilmu yang kita pelajari dipelatihan ini menjadi amal yang terus mengalir untuk kakak dari RevoU semua</h4>
+                        <br>
+                        <h3>Semangat Untuk Para Programmer Muda</h3>
+                        <sub>Saya yang udah tua, nyimak aja hehehe</sub>
+                    </article>
+                </div> 
+            </div>    
+        </section>
+    </section>
+
+<footer style="background-color: #2F2E30;color: white;">
+    <div class="flex-container">
+        <div class="flex-item-left">
+        </div>  
+        <div class="flex-item-right">
+            <h1 style="font-size: 30px; text-align: center;">Supported By</h1>
+            <h2 style="text-align: center;"><i class="fas fa-check-circle" style="color: #FEDF3D;font-size: 20px;"></i> RevoU Team</h2>
+        </div>
+    </div>  
+    <hr style="background-color: white;">
+    <p style="text-align: center;"> <i class="far fa-copyright"></i> Rico Ardi Saputra</p>
+    <br>
+
+</footer>
+</body>
+<script>
+    function validateForm(){
+        const name = document.forms["message-form"]["full-name"].value;
+        const birthDate = document.forms["message-form"]["birth-date"].value;
+        const gender = document.forms["message-form"]["gender"].value;
+        const messages = document.forms["message-form"]["messages"].value;
+        
+        const currenttime = new Date();
+
+
+        if (name =="" || birthDate == "" || gender == "" || messages =="") {
+            alert("Tidak boleh ada yang kosong");
+            return false;
+        }
+
+        setSenderUI(name, birthDate, gender, messages, currenttime);
+
+        return false;
+    }
+
+    
+</script>
+<script src="script/script.js"></script>
+</html>
+
+
+
+

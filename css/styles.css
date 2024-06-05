@@ -1,0 +1,133 @@
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container {
+    padding-top: 5%;
+}
+
+/* .section-container{ */
+    /* background-color: aquamarine; */
+/* } */
+
+nav>section{
+    display: flex;
+}
+
+.logo-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    /* background-image: url(https://picsum.photos/200); */
+    background-image: url("../assets/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.nav-item {
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    /* margin-right: 20%; */
+    /* position: absolute; */
+    /* display: flex; */
+}
+
+.facility-list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-result{
+  
+    /* height: 100px; */
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.message-us-section{
+    /* display: flex; */
+    padding-bottom: 50px;
+}
+
+.input-form{
+  padding: 10px;
+  width: 90%;
+}
+
+.div-form{
+  padding: 10px;
+}
+
+.label-form{
+  padding-bottom: 10px;
+}
+
+/* .result-container{
+    width: 100%;
+} */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    /* font-size: 30px; */
+    text-align: left;
+  }
+  
+  .flex-item-left {
+    padding-left: 40px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+.daftar-btn {
+    background-color: #F13B57;
+	border-radius: 100px;
+    padding: 20px;
+    border: none;
+    color: white;
+}
+
+.flex-item-left-2 {
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    flex: 30%;
+  }
+  
+  .flex-item-right-2 {
+    padding: 10px;
+    flex: 70%;
+  }
+  
